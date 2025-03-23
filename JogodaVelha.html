@@ -24,7 +24,7 @@
  
          <ul>
              <li class="item-menu">
-                 <a href="#">
+                 <a href="cuida+.html">
                      <span class="icon"><i class="bi bi-house"></i></span>
                      <span class="txt-link">Início</span>
                  </a>
@@ -68,27 +68,24 @@
  
      </nav>
      
-     <main>
-         <button id="emergencia">EMERGÊNCIA</button>
-         
-         <section class="historico">
-             <h2>Histórico</h2>
-             <ul id="historico-lista">
-                 <li>Cuidador - 12/02/2025</li>
-                 <li>Filho - 02/04/2025</li>
-                 <li>Cuidador - 24/09/2025</li>
-             </ul>
-         </section>
-         
-         <section class="contatos">
-             <h2>Contatos:</h2>
-             <ul id="contatos-lista">
-                 <li>Cuidador</li>
-                 <li>Filho</li>
-                 <li>Filha</li>
-             </ul>
-             <button id="add-contato">+ Adicionar contato</button>
-         </section>
+     <main id="Main-jogo">
+     <div class="game-container">
+         <div class="board" id="board">
+             <div class="cell" onclick="makeMove(0)"></div>
+             <div class="cell" onclick="makeMove(1)"></div>
+             <div class="cell" onclick="makeMove(2)"></div>
+             <div class="cell" onclick="makeMove(3)"></div>
+             <div class="cell" onclick="makeMove(4)"></div>
+             <div class="cell" onclick="makeMove(5)"></div>
+             <div class="cell" onclick="makeMove(6)"></div>
+             <div class="cell" onclick="makeMove(7)"></div>
+             <div class="cell" onclick="makeMove(8)"></div>
+         </div>
+         <p id="status"></p>
+         <button onclick="resetGame()">Reiniciar</button>
+     </div>
+ 
+     <script src="script.js"></script>
      </main>
  </body>
  </html>
