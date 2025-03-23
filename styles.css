@@ -13,6 +13,7 @@ body {
     background-color: #ECECEC;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 header {
@@ -20,11 +21,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #2E8B57;
-    padding: 15px;
+    padding: 15px 20px;
     font-weight: bold;
     font-size: 22px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+    min-height: 50px;
 }
 
 h1 {
@@ -65,6 +67,12 @@ h1 {
     display: block;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    transition: .2s;
+}
+
+#emergencia:hover{
+    background-color: #E7E254;
+    padding:40px 80px ;
 }
 
 .historico, .contatos {
@@ -117,6 +125,11 @@ button {
     display: block;
     margin: 15px auto;
     text-decoration: underline;
+    transition: .2s;
+}
+
+#add-contato:hover {
+    color: #2C3E50;
 }
 li {
 color: #555555;
@@ -124,4 +137,89 @@ font-family: 'Arial Black', sans-serif;
 font-size: 23px;
 text-align: center;
 display: block; 
+}
+header a {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+
+.icon i {
+    font-size: 28px; 
+    color: #2C3E50; 
+    transition: color 0.3s ease;
+}
+
+.icon i:hover {
+    color: #B9E4C9; 
+}
+
+
+
+/*Style para o Menu*/
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #2E8B57;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #B9E4C9;
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.btn-expandir > i {
+    color: #2C3E50;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.item-menu:hover {
+    background: #B9E4C9;
+    border-radius: 40px; 
+}
+
+ul li.item-menu a{
+    color: #555555;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 0%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
 }
