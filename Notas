@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuida+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="top-bar">
+        <button class="menu-btn">☰</button>
+        <h1>CUIDA+</h1>
+        <button class="bell-btn">🔔</button>
+      </div>
+    </header>
+
+    <main>
+      <button class="notas-btn">Notas</button>
+
+      <ul class="task-list">
+        <li class="task done">
+          <span class="icon">🔔</span>
+          <span class="text">Dar Banho</span>
+          <span class="check">✔</span>
+        </li>
+        <li class="task">
+          <span class="icon">🔔</span>
+          <span class="text">Comprar Pão</span>
+          <span class="check">◯</span>
+        </li>
+        <li class="task done">
+          <span class="icon">🔔</span>
+          <span class="text">Deambular</span>
+          <span class="check">✔</span>
+        </li>
+        <li class="task done">
+          <span class="icon">🔔🔊</span>
+          <span class="text">📶📶📶📶📶</span>
+          <span class="check">✔</span>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <button class="mic-btn">🎤</button>
+      <button class="add-btn">➕</button>
+    </footer>
+  </div>
+</body>
+</html>
