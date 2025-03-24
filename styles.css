@@ -557,7 +557,7 @@ body {
     cursor: pointer;
   }
 
- #Notas
+#Notas
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -608,16 +608,21 @@ body {
   }
   
   .task {
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: space-between;
+    justify-content: ;
     background-color: #2E8B57;
     margin: 10px;
     padding: 10px 15px;
     border-radius: 25px;
     color: black;
     font-weight: bold;
-  }
+      display: block;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+    }
+  
 
 .task.done .text {
   color: #d9d9d9;
