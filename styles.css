@@ -464,3 +464,65 @@ body {
     box-shadow: 2px 2px 5px #666;
     cursor: pointer;
   }
+
+ #Notas
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+  }
+  
+  .app {
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+  }
+  
+  .top-bar h1 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .notas-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2E8B57;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+  }
