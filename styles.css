@@ -331,14 +331,270 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #28a745;
+    background-color: #2E8B57;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #218838;
+
+    background-color: #b0d6b0;
+}
+
+.option {
+    background-color: #2E8B57;
+    color: #F5E6CA;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 20%; 
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub-options .option {
+    width: 20%;
+    max-width: 250px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: 'Arial Black', sans-serif;
+    color: #202020;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.notas-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.notas-highlight {
+    color: #2E8B57;
+}
+
+.notas-subtitle {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.notas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.notas-item {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 350px;
+}
+
+.notas-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.notas-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.notas-check {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notas-audio {
+    width: 10px;
+    height: auto;
+}
+
+.notas-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+}
+
+.notas-mic,.notas-add {
+  background-color: #2E8B57;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+.notas-audio-img {
+    width: 250px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+#Medicamentos
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+  }
+  
+  .container {
+    width: 300px;
+    background: #f5f5f5;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E8B57;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    min-height: 50px;
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #2C3E50, #648DB6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 4px 3px rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-text-stroke: 2px black; 
+}
+  
+  .med-item {
+        background-color: #2E8B57;
+        color: #fff;
+        border: none;
+        padding: 20px;
+        margin: 40px auto;
+        display: block;
+        border-radius: 20px;
+        width: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px #aaa;
+        display: flex; 
+        align-items: center; 
+        gap: 10px; 
+        margin-bottom: 8px; 
+  }
+  
+  .med-name {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .tada {
+    color: #444;
+  }
+  
+  .zolpi {
+    color: #444;
+  }
+  
+  .doxi {
+    color: #444;
+  }
+  
+  .busco {
+    color: #444;
+  }
+  
+  .actions .material-icons {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px #666;
+    cursor: pointer;
+  }
+
+  .config-title {
+    font-family: 'Arial Black', sans-serif;
+    color: #F5E6CA;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.config-div {
+    background-color: #2E8B57;
+    padding: 10px;
+    margin: 40px auto;
+    border-radius: 20px;
+    width: 40%; 
+    max-width: 400px; 
+    min-width: 300px; 
+    text-align: center; 
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    max-height: 200px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
 }
 
 .container {
