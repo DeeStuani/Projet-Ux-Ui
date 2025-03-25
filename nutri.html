@@ -3,7 +3,7 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cuida+</title>
+     <title>Recomendações de Dieta</title>
      <link rel="stylesheet" href="styles.css">
      <link rel="icon" type="image/png" href="Imagens/icone.png">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -45,7 +45,7 @@
              </li>
  
              <li class="item-menu">
-                 <a href="#">
+                 <a href="Atividades+.html">
                      <span class="icon"><i class="bi bi-puzzle-fill"></i></span>
                      <span class="txt-link">Atividades</span>
                  </a>
@@ -76,46 +76,51 @@
      </nav>
      
      <main>
- 
-         
-     <section class="Controles">
-             <h2>Exercicios</h2>
-         <ul id="Controles-lista">
-         <li>
-             <a href="ExeAlongamento.html"> Alongamento</a>
-         </li>
-         <li>
-             <a href="ExeMarcha.html"> Marcha estacionária</a> 
-         </li>
-         <li>
-             <a href="ExeLevPeso.html"> Levantamento de peso</a> 
-         </li>
-         <li>
-             <a href="ExeJoelho.html"> Exercicios para Joelho</a>
-         </li>
-         </ul>
-     </section>
- 
-     <section class="Controles">
-             <h2>Jogos</h2>
-          <ul id="Controles-lista">
-                 <li>
-                    <a href="https://www.paciencia.co/domino">Dominó</a> 
-                 </li>
-                 <li>
-                     <a href="https://www.chess.com/">Xadrez</a>
-                 </li>
-                 <li>
-                   <a href="https://rachacuca.com.br/passatempos/jogo-da-memoria/"> Jogo da memória</a> 
-                 </li>
-                 <li>
-                     <a href="JogodaVelha.html">Jogo da Velha</a>
-                 </li>
-                 <li>
-                    <a href="https://cruzadasclube.com.br/jogo/i/id/4109/caca-palavras-767/">Palavras cruzadas</a> 
-                 </li>
-         </ul>
-     </section>
+        <div class="container">
+            <h2 class="page-specific">Sugestões de Refeições</h2>
+            <label for="condicao">Selecione sua condição de saúde:</label>
+            <select id="condicao">
+                <option value="">Escolha uma opção</option>
+                <option value="osteoporose">Osteoporose</option>
+                <option value="diabetes">Diabetes</option>
+            </select>
+            <button class="btn-dieta" onclick="mostrarDieta()">Ver Dieta</button>
+        
+            <div id="resultado" class="diet"></div>
+        </div>
+        
+        <script>
+            function mostrarDieta() {
+                var condicao = document.getElementById("condicao").value;
+                var resultado = document.getElementById("resultado");
+                
+                if (condicao === "osteoporose") {
+                    resultado.innerHTML = `
+                        <h3>Cardápio para Osteoporose</h3>
+                        <ul>
+                            <li><strong>Café da manhã:</strong> Iogurte natural com granola e castanhas</li>
+                            <li><strong>Almoço:</strong> Salada verde, arroz integral, feijão e filé de peixe grelhado</li>
+                            <li><strong>Lanche:</strong> Leite com aveia e frutas vermelhas</li>
+                            <li><strong>Jantar:</strong> Omelete de espinafre e queijo branco</li>
+                        </ul>
+                    `;
+                } else if (condicao === "diabetes") {
+                    resultado.innerHTML = `
+                        <h3>Cardápio para Diabetes</h3>
+                        <ul>
+                            <li><strong>Café da manhã:</strong> Pão integral com ricota e suco natural sem açúcar</li>
+                            <li><strong>Almoço:</strong> Salada de folhas, quinoa, frango grelhado e legumes cozidos</li>
+                            <li><strong>Lanche:</strong> Iogurte natural com chia e frutas vermelhas</li>
+                            <li><strong>Jantar:</strong> Sopa de legumes com frango desfiado</li>
+                        </ul>
+                    `;
+                } else {
+                    resultado.innerHTML = `
+                        <p>Por favor, selecione uma condição de saúde para visualizar a dieta recomendada.</p>
+                    `;
+                }
+            }
+        </script>
      </main>
  </body>
  </html>
