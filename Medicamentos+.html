@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Cuida+</title>
      <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="icon" type="image/png" href="Imagens/icone.png">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
  </head>
@@ -59,11 +60,11 @@
              </li>
 
              <li class="item-menu">
-                <a href="nutri.html">
-                    <span class="icon"><i class="bi bi-apple"></i></span>
-                    <span class="txt-link">nutri</span>
-                </a>
-            </li>
+              <a href="nutri.html">
+                  <span class="icon"><i class="bi bi-apple"></i></span>
+                  <span class="txt-link">nutri</span>
+              </a>
+          </li>
  
              <li class="item-menu">
                  <a href="Config+.html">
@@ -74,63 +75,46 @@
          </ul>
  
      </nav>
-     
-     <main>
- 
-         
-     <section class="Controles">
-             <h2>Glicose</h2>
-         <ul id="Controles-lista">
-         <li>
-             <img src="Imagens/smilegreen.png" alt="Ícone verde">
-             70-140 mg/dL
-         </li>
-         <li>
-             <img src="Imagens/mehyellow.png" alt="Ícone amarelo">
-             141-180 mg/dL
-         </li>
-         <li>
-             <img src="Imagens/frownred.png" alt="Ícone vermelho">
-             > 180 mg/dL < 70 mg/dL
-         </li>
-         </ul>
-     </section>
- 
-     <section class="Controles">
-             <h2>Pressão Arterial</h2>
-          <ul id="Controles-lista">
-                 <li>
-                     <img src="Imagens/smilegreen.png" alt="Ícone verde">
-                     < 120/80 mmHg
-                 </li>
-                 <li>
-                     <img src="Imagens/mehyellow.png" alt="Ícone amarelo">
-                     121-139 / 80-89 mmHg
-                 </li>
-                 <li>
-                     <img src="Imagens/frownred.png" alt="Ícone vermelho">
-                     > 140/90 mmHg
-                 </li>
-         </ul>
-     </section>
- 
-     <section class="Controles">
-         <h2>Medicamentos</h2>
-      <ul id="Controles-lista">
-             <li>
-                 <img src="Imagens/certo.png" alt="Ícone certo">
-                 Manipulado - 13:10
-             </li>
-             <li>
-                 <img src="Imagens/certo.png" alt="Ícone certo">
-                 Buscopan - 15:40
-             </li>
-             <li>
-                 <img src="Imagens/errado.png" alt="Ícone errado">
-                 Doxilamina - 19:20
-             </li>
-     </ul>
- </section>
-     </main>
- </body>
- </html>
+<main>
+
+      <div class="med-item">
+        <span class="material-icons">wb_sunny</span>
+        <span class="med-name tada">Tadalafila</span>
+        <div class="actions">
+          <span class="material-icons">check_circle</span>
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <div class="med-item">
+        <span class="material-icons">nights_stay</span>
+        <span class="med-name zolpi">Zolpidem</span>
+        <div class="actions">
+          <span class="material-icons">check_circle</span>
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <div class="med-item">
+        <span class="material-icons">wb_twilight</span>
+        <span class="med-name doxi">Doxilamina</span>
+        <div class="actions">
+          <span class="material-icons">check_circle</span>
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <div class="med-item">
+        <span class="material-icons">wb_sunny</span>
+        <span class="med-name busco">Buscopan</span>
+        <div class="actions">
+          <span class="material-icons">check_circle</span>
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+    </main>
+
+    <button class="add-btn material-icons">add</button>
+  </div>
+</body>
+</html>
