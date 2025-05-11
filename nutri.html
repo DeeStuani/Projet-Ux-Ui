@@ -77,26 +77,26 @@
      
      <main>
         <div class="container-nutri">
-            <h2 class="page-specific">Sugestões de Refeições</h2>
+            <h2>Sugestões de Refeições</h2>
             <label for="condicao">Selecione sua condição de saúde:</label>
             <select id="condicao">
                 <option value="">Escolha uma opção</option>
                 <option value="osteoporose">Osteoporose</option>
                 <option value="diabetes">Diabetes</option>
             </select>
-            <button class="btn-dieta" onclick="mostrarDieta()">Ver Dieta</button>
+            <button class="botao-dieta" onclick="mostrarDieta()">Ver Dieta</button>
         
             <div id="resultado" class="diet"></div>
         </div>
         
-        <script>
+        <script class="script">
             function mostrarDieta() {
                 var condicao = document.getElementById("condicao").value;
                 var resultado = document.getElementById("resultado");
                 
                 if (condicao === "osteoporose") {
                     resultado.innerHTML = `
-                        <h3>Cardápio para Osteoporose</h3>
+                        <h3 class= "cardapio">Cardápio para Osteoporose</h3>
                         <ul>
                             <li><strong>Café da manhã:</strong> Iogurte natural com granola e castanhas</li>
                             <li><strong>Almoço:</strong> Salada verde, arroz integral, feijão e filé de peixe grelhado</li>
@@ -106,7 +106,7 @@
                     `;
                 } else if (condicao === "diabetes") {
                     resultado.innerHTML = `
-                        <h3>Cardápio para Diabetes</h3>
+                        <h3 class= "cardapio">Cardápio para Diabetes</h3>
                         <ul>
                             <li><strong>Café da manhã:</strong> Pão integral com ricota e suco natural sem açúcar</li>
                             <li><strong>Almoço:</strong> Salada de folhas, quinoa, frango grelhado e legumes cozidos</li>
