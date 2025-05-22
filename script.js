@@ -44,3 +44,29 @@ let board = ["", "", "", "", "", "", "", "", ""];
      document.querySelectorAll(".cell").forEach(cell => cell.innerText = "");
      document.getElementById("status").innerText = "";
  }
+ // Submenu de acessibilidade
+const accessibilityBtn = document.getElementById('accessibility-btn');
+const subOptions = document.getElementById('sub-options');
+
+accessibilityBtn.addEventListener('click', () => {
+  subOptions.classList.toggle('show');
+});
+
+// Tema claro/escuro
+const toggle = document.getElementById('theme-toggle');
+const themeLabel = document.querySelector('.toggle-label');
+
+// Estado inicial salvo no localStorage (opcional)
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  toggle.checked = true;
+  themeLabel.textContent = '🌚';
+}
+
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
+
+  const isDark = document.body.classList.contains('dark-mode');
+  themeLabel.textContent = isDark ? '🌚' : '☀️';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
