@@ -66,6 +66,7 @@ header > h1 {
 #emergencia:hover{
     background-color: #E7E254;
     padding:40px 80px ;
+    color: red;
 }
 
 .historico, .contatos {
@@ -333,7 +334,7 @@ button:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    margin: 202px auto; 
+    margin: 100px auto; 
 }
 
 #condicao {
@@ -352,7 +353,9 @@ button:hover {
 
 
 .diet {
-    background-color: #A7ECFF;
+    background-color: #477EA5;
+    color: #ffffff;
+    font-size: 25px;
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -380,7 +383,8 @@ button:hover {
     color: #A7ECFF; 
     margin-bottom: 8px; 
     text-align: center; 
-} 
+}
+
 
 #condicao {
     width: 100%; 
@@ -468,7 +472,7 @@ button:hover {
 
 .notas-icon {
     font-size: 20px;
-    margin-right: 10px;
+    margin: auto 10px;
 }
 
 .notas-text {
@@ -520,6 +524,10 @@ button:hover {
     width: 850px;
     height: 50px;
     margin: 0 10px;
+}
+
+.sininho{
+    margin: 20px;
 }
   
   .med-item {
