@@ -563,23 +563,43 @@ button:hover {
     cursor: pointer;
   }
   
-  .add-btn {
-    background: linear-gradient(to right, #477EA5, #3790CF);
+ .add-button {
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 50%;
-    padding: 15px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    width: 50px;
+    height: 50px;
     font-size: 24px;
-    box-shadow: 2px 2px 5px #666;
-    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
-  }
-  .add-btn:hover {
-    background: #0FF3FA;
-  }
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.close-btn {
+    color: red;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
 
   .config-title {
     font-family: 'Arial Black', sans-serif;
