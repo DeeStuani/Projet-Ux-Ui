@@ -70,3 +70,31 @@ toggle.addEventListener('change', () => {
   themeLabel.textContent = isDark ? '🌚' : '☀️';
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
+ document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM completamente carregado");
+});
+
+document.getElementById('addMedBtn').onclick = function() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+document.querySelector('.close-btn').onclick = function() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+document.getElementById('addMedForm').onsubmit = function(event) {
+    event.preventDefault();
+    
+    const medName = document.getElementById('medName').value;
+    
+    if (medName) {
+        const novoMedicamento = document.createElement('div');
+        novoMedicamento.classList.add('medicamento');
+        novoMedicamento.innerHTML = `<span>${medName}</span>`;
+        
+        document.querySelector('.medicamentos-lista').appendChild(novoMedicamento);
+        
+        document.getElementById('medName').value = '';
+        document.getElementById('popup').style.display = 'none';
+    }
+}
