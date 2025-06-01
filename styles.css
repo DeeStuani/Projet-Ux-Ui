@@ -414,7 +414,7 @@ button:hover {
 
 .sub-options .option {
     width: 20%; 
-    max-width: 30px;
+    max-width: 350px;
     font-style: italic;
     font-size: 14px;
 }
@@ -459,7 +459,7 @@ button:hover {
 .notas-item {
     background: linear-gradient(to right, #477EA5, #3790CF);
     color: white;
-    padding: 30px;
+    padding: 10px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -666,7 +666,7 @@ body.dark-mode .option {
 /* Estilo adicional opcional para opções */
 .option {
   margin: 10px auto;
-  padding: 10px 400px;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #e0f0ff;
   width: 300px;
