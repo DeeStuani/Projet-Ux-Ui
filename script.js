@@ -67,6 +67,6 @@ toggle.addEventListener('change', () => {
   document.body.classList.toggle('dark-mode');
 
   const isDark = document.body.classList.contains('dark-mode');
-  themeLabel.textContent = isDark ? '🌚' : '☀️';
+  themeLabel.textContent = isDark ? '🌑' : '☀️';
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
