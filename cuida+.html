@@ -1,101 +1,295 @@
 <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cuida+</title>
-     <link rel="stylesheet" href="styles.css">
-     <link rel="icon" type="image/png" href="Imagens/icone.png">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
- </head>
- <body>
-     <header>
-         <h1>CUIDA+</h1>
-         <a href="notify.html">
-             <span class="icon"><i class="bi bi-bell-fill"></i></span>
-             <span class="txt-link"></span>
-         </a>
-     </header>
-     <nav class="menu-lateral">
- 
-         <div class="btn-expandir">
-             <i class="bi bi-list"></i>
-         </div>
- 
-         <ul>
-             <li class="item-menu">
-                 <a href="cuida+.html">
-                     <span class="icon"><i class="bi bi-house"></i></span>
-                     <span class="txt-link">Início</span>
-                 </a>
-             </li>
- 
-             <li class="item-menu">
-                 <a href="Monitoramento+.html">
-                     <span class="icon"><i class="bi bi-activity"></i></span>
-                     <span class="txt-link">Monitoramento</span>
-                 </a>
-             </li>
- 
-             <li class="item-menu">
-                 <a href="Medicamentos+.html">
-                     <span class="icon"><i class="bi bi-capsule"></i></span>
-                     <span class="txt-link">Medicamentos</span>
-                 </a>
-             </li>
- 
-             <li class="item-menu">
-                 <a href="Atividades+.html">
-                     <span class="icon"><i class="bi bi-puzzle-fill"></i></span>
-                     <span class="txt-link">Atividades</span>
-                 </a>
-             </li>
- 
-             <li class="item-menu">
-                 <a href="Notas+.html">
-                     <span class="icon"><i class="bi bi-card-checklist"></i></span>
-                     <span class="txt-link">Notas</span>
-                 </a>
-             </li>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuida+</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="Imagens/icone.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>CUIDA+</h1>
+      <a href="notify.html">
+        <span class="icon"><i class="bi bi-bell-fill"></i></span>
+        <span class="txt-link"></span>
+      </a>
+    </header>
+    <nav class="menu-lateral">
+      <div class="btn-expandir">
+        <i class="bi bi-list"></i>
+      </div>
 
-             <li class="item-menu">
-                <a href="nutri.html">
-                    <span class="icon"><i class="bi bi-apple"></i></span>
-                    <span class="txt-link">Nutrição</span>
-                </a>
-            </li>
- 
-             <li class="item-menu">
-                 <a href="Config+.html">
-                     <span class="icon"><i class="bi bi-gear-fill"></i></span>
-                     <span class="txt-link">Configurações</span>
-                 </a>
-             </li>
-         </ul>
- 
-     </nav>
-     
-     <main>
-         <button id="emergencia">EMERGÊNCIA</button>
-         
-         <section class="historico">
-             <h2>Histórico</h2>
-             <ul id="historico-lista">
-                 <li>Cuidador - 12/02/2025</li>
-                 <li>Filho - 02/04/2025</li>
-                 <li>Cuidador - 24/09/2025</li>
-             </ul>
-         </section>
-         
-         <section class="contatos">
-             <h2>Contatos:</h2>
-             <ul id="contatos-lista">
-                 <li>Cuidador</li>
-                 <li>Filho</li>
-                 <li>Filha</li>
-             </ul>
-             <button id="add-contato">+ Adicionar contato</button>
-         </section>
-     </main>
- </body>
- </html>
+      <ul>
+        <li class="item-menu">
+          <a href="cuida+.html">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="txt-link">Início</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="Monitoramento+.html">
+            <span class="icon"><i class="bi bi-activity"></i></span>
+            <span class="txt-link">Monitoramento</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="Medicamentos+.html">
+            <span class="icon"><i class="bi bi-capsule"></i></span>
+            <span class="txt-link">Medicamentos</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="Atividades+.html">
+            <span class="icon"><i class="bi bi-puzzle-fill"></i></span>
+            <span class="txt-link">Atividades</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="Notas+.html">
+            <span class="icon"><i class="bi bi-card-checklist"></i></span>
+            <span class="txt-link">Notas</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="nutri.html">
+            <span class="icon"><i class="bi bi-apple"></i></span>
+            <span class="txt-link">Nutrição</span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="Config+.html">
+            <span class="icon"><i class="bi bi-gear-fill"></i></span>
+            <span class="txt-link">Configurações</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <button id="emergencia">EMERGÊNCIA</button>
+
+      <section class="historico">
+        <h2>Histórico</h2>
+        <ul id="historico-lista">
+          <li>Cuidador - 12/02/2025</li>
+          <li>Filho - 02/04/2025</li>
+          <li>Cuidador - 24/03/2025</li>
+        </ul>
+      </section>
+
+      <section class="contatos">
+        <h2>Contatos:</h2>
+        <ul id="contatos-lista"></ul>
+        <button id="add-contato">+ Adicionar contato</button>
+      </section>
+    </main>
+
+    <div id="modal-contato" class="modal">
+      <div class="modal-conteudo">
+        <span class="fechar" id="fechar-modal">&times;</span>
+        <h3>Novo Contato</h3>
+        <input type="text" id="nome-contato" placeholder="Nome do contato" />
+        <input
+          type="text"
+          id="numero-contato"
+          placeholder="Telefone do contato"
+        />
+        <button id="salvar-contato">Salvar</button>
+      </div>
+    </div>
+
+    <div id="modal-detalhes" class="modal">
+      <div class="modal-conteudo">
+        <span class="fechar" id="fechar-detalhes">&times;</span>
+        <h3>Detalhes do Contato</h3>
+        <p><strong>Nome:</strong> <span id="detalhe-nome"></span></p>
+        <p><strong>Telefone:</strong> <span id="detalhe-telefone"></span></p>
+      </div>
+    </div>
+  </body>
+
+  <div id="modal-emergencia" class="modal">
+    <div class="modal-conteudo">
+      <span
+        id="fechar-emergencia"
+        style="cursor: pointer; float: right; font-size: 20px"
+        >&times;</span
+      >
+      <h3>Escolha um contato de emergência:</h3>
+      <ul id="lista-emergencia"></ul>
+      <button id="cancelar-emergencia" style="margin-top: 10px">
+        Cancelar
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Seleciona os elementos
+    const botaoAbrir = document.getElementById("add-contato");
+    const modal = document.getElementById("modal-contato");
+    const botaoFechar = document.getElementById("fechar-modal");
+    const botaoSalvar = document.getElementById("salvar-contato");
+    const inputNome = document.getElementById("nome-contato");
+    const inputNumero = document.getElementById("numero-contato");
+    const listaContatos = document.getElementById("contatos-lista");
+    const modalDetalhes = document.getElementById("modal-detalhes");
+    const fecharDetalhes = document.getElementById("fechar-detalhes");
+    const detalheNome = document.getElementById("detalhe-nome");
+    const detalheTelefone = document.getElementById("detalhe-telefone");
+    const botaoEmergencia = document.getElementById("emergencia");
+    const modalEmergencia = document.getElementById("modal-emergencia");
+    const listaEmergencia = document.getElementById("lista-emergencia");
+    const fecharEmergencia = document.getElementById("fechar-emergencia");
+
+    // Abrir o modal
+    botaoAbrir.addEventListener("click", () => {
+      modal.style.display = "flex";
+      inputNome.value = "";
+      inputNome.focus();
+    });
+
+    // Fechar o modal
+    botaoFechar.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Salvar contato
+    botaoSalvar.addEventListener("click", () => {
+      const nome = inputNome.value.trim();
+      const telefone = inputNumero.value.trim();
+
+      if (nome !== "" && telefone !== "") {
+        const li = document.createElement("li");
+        const spanNome = document.createElement("span");
+        spanNome.textContent = nome;
+        li.appendChild(spanNome);
+
+        li.dataset.telefone = telefone;
+        li.dataset.nome = nome; // salva o nome corretamente separado
+        // Botão de remover contato
+        const btnRemover = document.createElement("button");
+        btnRemover.textContent = "❌";
+        btnRemover.style.marginLeft = "10px";
+        btnRemover.style.background = "transparent";
+        btnRemover.style.border = "none";
+        btnRemover.style.cursor = "pointer";
+        btnRemover.title = "Remover contato";
+
+        btnRemover.addEventListener("click", (e) => {
+          e.stopPropagation(); // evita abrir o modal de detalhes
+          if (confirm(`Tem certeza que deseja remover o contato "${nome}"?`)) {
+            li.remove();
+          }
+        });
+
+        li.appendChild(btnRemover);
+        listaContatos.appendChild(li);
+        modal.style.display = "none";
+      } else {
+        alert("Por favor, insira o nome e o telefone do contato.");
+      }
+    });
+
+    // Fechar modal ao clicar fora
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    listaContatos.addEventListener("click", (e) => {
+      let li = e.target;
+
+      // Se clicar no <span> ou outro filho, subir até o <li>
+      while (li && li.tagName !== "LI") {
+        li = li.parentElement;
+      }
+
+      if (li) {
+        detalheNome.textContent = li.dataset.nome;
+        detalheTelefone.textContent = li.dataset.telefone;
+        modalDetalhes.style.display = "flex";
+      }
+    });
+
+    // Fechar o modal de detalhes
+    fecharDetalhes.addEventListener("click", () => {
+      modalDetalhes.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modalDetalhes) {
+        modalDetalhes.style.display = "none";
+      }
+    });
+
+    botaoEmergencia.addEventListener("click", () => {
+      const contatos = listaContatos.querySelectorAll("li");
+
+      if (contatos.length === 0) {
+        alert("Nenhum contato encontrado. Chamando ambulância...");
+        adicionarAoHistorico("Ambulância");
+        return;
+      }
+
+      // Limpa a lista de contatos da emergência
+      listaEmergencia.innerHTML = "";
+
+      // Adiciona cada contato como opção
+      contatos.forEach((contato) => {
+        const li = document.createElement("li");
+        li.textContent = contato.dataset.nome; // <=== nome sem ❌
+        li.dataset.telefone = contato.dataset.telefone;
+        li.dataset.nome = contato.dataset.nome;
+
+        li.addEventListener("click", () => {
+          alert(`Ligando para ${li.dataset.nome} - ${li.dataset.telefone}`);
+          adicionarAoHistorico(li.dataset.nome); // <=== nome limpo
+          modalEmergencia.style.display = "none";
+        });
+
+        listaEmergencia.appendChild(li);
+      });
+
+      modalEmergencia.style.display = "flex";
+    });
+
+    fecharEmergencia.addEventListener("click", () => {
+      modalEmergencia.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modalEmergencia) {
+        modalEmergencia.style.display = "none";
+      }
+    });
+
+    const botaoCancelarEmergencia = document.getElementById(
+      "cancelar-emergencia"
+    );
+
+    botaoCancelarEmergencia.addEventListener("click", () => {
+      modalEmergencia.style.display = "none";
+    });
+
+    function adicionarAoHistorico(contato) {
+      const listaHistorico = document.getElementById("historico-lista");
+      const data = new Date();
+      const dataFormatada = data.toLocaleDateString("pt-BR"); // Ex: 06/06/2025
+      const li = document.createElement("li");
+      li.textContent = `${contato} - ${dataFormatada}`;
+      listaHistorico.appendChild(li);
+    }
+  </script>
+</html>

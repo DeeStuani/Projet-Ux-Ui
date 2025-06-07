@@ -69,6 +69,64 @@ header > h1 {
     color: red;
 }
 
+#modal-emergencia {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-emergencia .modal-conteudo {
+  background-color: #ffffff; /* fundo branco */
+  color: #000000; /* texto preto */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+#modal-emergencia ul {
+  list-style: none;
+  padding: 0;
+  margin:auto;
+}
+
+#modal-emergencia li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ff0000;
+  color: #E7E254;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#modal-emergencia li:hover {
+  background-color: #d4cb3e;
+}
+
+#cancelar-emergencia {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#cancelar-emergencia:hover {
+  background-color: #aaa;
+}
+
 .historico, .contatos {
     background: linear-gradient(to right, #477EA5, #3790CF);
     padding: 20px;
@@ -123,6 +181,57 @@ ul {
 #add-contato:hover {
     color: #0FF3FA;
 }
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* fundo escuro */
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.fechar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
+
+.modal input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #3790CF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
 
 .Controles {
     background: linear-gradient(to right, #477EA5, #3790CF);
