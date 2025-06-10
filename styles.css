@@ -67,6 +67,7 @@ header > h1 {
 
 #emergencia:hover{
     background-color: #E7E254;
+    color: red;
     padding:40px 80px ;
 }
 
