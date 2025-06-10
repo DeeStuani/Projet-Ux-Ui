@@ -65,6 +65,7 @@ header > h1 {
 
 #emergencia:hover{
     background-color: #E7E254;
+    color: red;
     padding:40px 80px ;
     color: red;
 }
@@ -524,8 +525,8 @@ button:hover {
 }
 
 .sub-options .option {
-    width: 20%; 
-    max-width: 350px;
+    width: 25%; 
+    max-width: 550px;
     font-style: italic;
     font-size: 14px;
 }
@@ -570,7 +571,7 @@ button:hover {
 .notas-item {
     background: linear-gradient(to right, #477EA5, #3790CF);
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -778,24 +779,14 @@ body.dark-mode .option {
   max-height: 300px;
 }
 
-/* Estilo adicional opcional para opções */
-.option {
-  margin: 10px auto;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: #e0f0ff;
-  width: 300px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.option.main:hover,
-.option.sub:hover {
-  background-color: #d0e8ff;
-}
-
-.toggle-label {
-  margin-left: 10px;
-  cursor: pointer;
+.configs {
+    background: linear-gradient(to right, #477EA5, #3790CF);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 40%;
+    max-width: 600px;
+    text-align: center;
+    cursor: pointer;
 }
